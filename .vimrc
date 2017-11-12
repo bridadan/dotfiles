@@ -25,6 +25,8 @@ Plugin 'pangloss/vim-javascript'
 
 " Dark Theme "
 Bundle 'sickill/vim-monokai'
+Bundle 'NewProggie/NewProggie-Color-Scheme'
+Bundle 'danilo-augusto/vim-afterglow'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -47,6 +49,7 @@ filetype plugin indent on    " required
 
 " Enable smart indenting "
 :set smartindent
+:syntax on
 
 " Enable paste mode by default "
 :set paste
@@ -62,7 +65,7 @@ vnoremap <S-Tab> <gv
 let g:netrw_banner = 0
 
 " Configure theme "
-colorscheme monokai
+colorscheme afterglow
 
 " Auto close completion window "
 let g:ycm_autoclose_preview_window_after_completion=1
