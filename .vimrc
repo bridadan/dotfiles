@@ -3,6 +3,7 @@ filetype off                  " required
 
 " Setup 256 terminal "
 set t_Co=256
+se term=screen-256color
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -42,17 +43,18 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Setup 4 spaces for tabs "
-:set tabstop=4
-:set shiftwidth=4
-:set expandtab
-
 " Enable smart indenting "
 :set smartindent
 :syntax on
 
 " Enable paste mode by default "
 :set paste
+
+" Setup 4 spaces for tabs "
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+
 
 " Setup all the goodies for visual tabbing "
 nnoremap <Tab> >>_
@@ -69,3 +71,9 @@ colorscheme afterglow
 
 " Auto close completion window "
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" Enable ruler "
+set ruler
+
+" Strip trailing whitespace on save "
+autocmd BufWritePre * %s/\s\+$//e
