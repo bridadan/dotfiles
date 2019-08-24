@@ -1,0 +1,15 @@
+[submodule ".vim/pack/plugins/start/editorconfig-vim"]
+	path = .vim/pack/plugins/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule ".vim/pack/plugins/start/rust.vim"]
+	path = .vim/pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule ".vim/pack/plugins/start/vim-go"]
+	path = .vim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/pack/plugins/start/vim-javascript"]
+	path = .vim/pack/plugins/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/plugins/start/vim-jsx"]
+	path = .vim/pack/plugins/start/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
