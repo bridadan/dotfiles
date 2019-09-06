@@ -34,3 +34,6 @@ inoremap <C-@> <C-X><C-O>
 
 " Remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
+
+" Highlight all search results
+set hlsearch
