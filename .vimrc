@@ -35,5 +35,6 @@ inoremap <C-@> <C-X><C-O>
 " Remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
-" Highlight all search results
-set hlsearch
+" Ensure you can backspace in insert mode
+" https://vi.stackexchange.com/a/2163
+set backspace=indent,eol,start
